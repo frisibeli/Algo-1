@@ -23,20 +23,19 @@ public class Queue<T> implements QueueInterface{
 
 	@Override
 	public Object pop() {
-		// TODO Auto-generated method stub
-		return null;
+		T element = container.get(0);
+		container.remove(0);
+		return element;
 	}
 
 	@Override
 	public Object peek() {
-		// TODO Auto-generated method stub
-		return null;
+		return container.get(0);
 	}
 
 	@Override
 	public int size() {
-		// TODO Auto-generated method stub
-		return 0;
+		return container.size();
 	}
 
 }
