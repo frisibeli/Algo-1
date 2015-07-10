@@ -1,0 +1,15 @@
+package Vector;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.junit.runners.JUnit4;
+
+public class VectorTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

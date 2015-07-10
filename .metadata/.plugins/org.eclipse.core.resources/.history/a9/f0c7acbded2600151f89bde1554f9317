@@ -1,0 +1,28 @@
+package Queue;
+public class Queue<T> implements QueueInterface{
+
+	@Override
+	public void push(Object value) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Object pop() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object peek() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int size() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

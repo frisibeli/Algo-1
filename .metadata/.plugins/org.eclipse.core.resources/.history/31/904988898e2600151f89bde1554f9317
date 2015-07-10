@@ -1,0 +1,84 @@
+package Vector;
+
+public class Vector<T> implements VectorInterface<T> {
+	public final int INITIAL_SIZE = 8;
+	public final int GROWTH_RATE = 2;
+	
+	private T[] array;
+	private int vectorSize;
+	private int capacity;
+	
+	Vector(){
+		array = (T[]) new Object[INITIAL_SIZE];
+		vectorSize = 0;
+		capacity = INITIAL_SIZE;
+	}
+	
+	Vector(int size, T value){
+		array = (T[]) new Object[size];
+		vectorSize = size;
+		capacity = size;
+		for (int i = 0; i < size; i++) {
+			array[i] = value;
+		}
+	}
+	
+	private void reallocateNewSpace(){
+		capacity *= GROWTH_RATE;
+		T[] temp = (T[]) new Object[capacity];
+		for (int i = 0; i < array.length; i++) {
+			temp[i] = array[i];
+		}
+		array = temp;
+	}
+	private static void checkBounaries(int index, int size){
+		if(index >= size || index < 0){
+			throw new IllegalStateException("Not in boundaries");
+		}
+	}
+	@Override
+	public void insert(int index, T value) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void add(T value) {
+		if(vectorSize+1 >= capacity){
+			reallocateNewSpace();
+		}
+		array[vectorSize] = value;
+		vectorSize++;
+	}
+
+	@Override
+	public T get(int index) {
+		checkBounaries(index, vectorSize);
+		return null;
+	}
+
+	@Override
+	public void remove(int index) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public T pop() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int size() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int capacity() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

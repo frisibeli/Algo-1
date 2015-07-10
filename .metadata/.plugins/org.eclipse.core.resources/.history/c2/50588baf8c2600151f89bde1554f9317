@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+package Vector;
+
+import junit.framework.TestCase;
+
+/**
+ * @author Kristiyan
+ *
+ */
+public class VectorTest extends TestCase {
+	public void testFailure() throws Exception {
+	    fail();
+	}
+}
