@@ -4,7 +4,9 @@
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="Vector.Vector"/>
 <fullyQualifiedTypeName name="org.junit.runners.JUnit4"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="Stack.StackInterface"/>
+<fullyQualifiedTypeName name="Queue.Queue"/>
 </qualifiedTypeNameHistroy>

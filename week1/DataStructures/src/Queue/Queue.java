@@ -6,7 +6,7 @@ import java.util.List;
 public class Queue<T> implements QueueInterface{
 	private List<T> container;
 	
-	Queue(){
+	public Queue(){
 		container = new ArrayList<T>();
 	}
 	Queue(int size, T value){
