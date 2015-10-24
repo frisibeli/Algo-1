@@ -1,5 +1,0 @@
-package Vector;
-
-public interface VectorInterface {
-
-}
