@@ -12,4 +12,5 @@
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="Sorting.SelectionSort"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="Sorting.InsertionSort"/>
 </qualifiedTypeNameHistroy>

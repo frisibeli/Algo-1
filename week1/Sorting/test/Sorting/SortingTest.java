@@ -18,7 +18,11 @@ public class SortingTest {
 	@Test
 	public void testInsertionSort() {
 		InsertionSort sorter = new InsertionSort(exampleInput);
-		assertEquals(Arrays.equals(sorter.sequence, exampleOutput), true);
+		assertArrayEquals(sorter.range, exampleOutput);
 	}
-	//Arrays.equals(Arrays.sort(arr1), Arrays.sort(arr2))
+	@Test
+	public void testBubbleSrort(){
+		BubbleSort sorter = new BubbleSort(exampleInput);
+		assertArrayEquals(sorter.range, exampleOutput);
+	}
 }
